@@ -1,0 +1,51 @@
+* Event page
+namespace Eventpage
+{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+       protected override void OnPreInit(EventArgs e)
+        {
+            Response.Write("<br/> This is before intialization");
+            base.OnPreInit(e);
+        }
+        protected override void OnInit(EventArgs e)
+        {
+            Response.Write("<br/> This is intialization");
+            base.OnInit(e);
+        }
+        protected override void OnInitComplete(EventArgs e)
+        {
+            Response.Write("<br/> This is intialization complete");
+            base.OnInitComplete(e);
+        }
+        protected override void OnPreLoad(EventArgs e)
+        {
+            Response.Write("<br/> This is intialization complete");
+            base.OnPreLoad(e);
+        }
+        protected override void OnLoad(EventArgs e)
+        {
+            Response.Write("<br/> This is page loading");
+            base.OnLoad(e);
+        }
+        protected override void OnLoadComplete(EventArgs e)
+        {
+            Response.Write("<br/> This is page loading complete");
+            base.OnLoadComplete(e);
+        }
+        protected override void OnPreRender(EventArgs e)
+        {
+            Response.Write("<br/> This is page Rendering");
+            base.OnPreRender(e);
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

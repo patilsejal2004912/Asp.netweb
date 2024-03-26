@@ -1,0 +1,28 @@
+* validation
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Frist Name:-<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>  
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please Enter The Name" ForeColor="Red"></asp:RequiredFieldValidator>
+        <br />
+        Email:-<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox> 
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="Enter the email" ForeColor="Blue"></asp:RequiredFieldValidator>
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Submit" />
+            </div>
+    </form>
+</body>
+</html>
